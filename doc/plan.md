@@ -1,1 +1,74 @@
-civislean: cheyenne + sam
+# civislean plan
+
+## TO DO LIST
+
+- ~~Decide what programming language to use~~
+    - answer: python
+- ~~Decide what python library to use~~
+    - https://analyticsindiamag.com/top-9-python-frameworks-for-game-development/
+    - https://wiki.python.org/moin/PythonGameLibraries
+    - https://betterprogramming.pub/7-must-try-python-libraries-to-build-apps-and-mobile-games-7e3f849721a
+    - https://www.pygame.org/news
+    - https://realpython.com/arcade-python-game-framework/
+        - answer: [PyGame](https://github.com/pygame/pygame/blob/d171c8cc7de4720f2103d4dfe54f09640cf9213c/examples/aliens.py)
+- Come up with list of features
+    - survival civilization building game
+        - based on virtual villagers series
+    - top down view
+    - environment has default objects such as fire pit
+    - start with a few people, each have bars
+        - hunger (function of time, affected by consuming food in the environment, activities vs. idling)
+        - health (hunger status, sickness, shelter, weather)
+        - thirst
+        - happiness
+        - strength
+    - community resources
+        - food
+            - people stress if not enough
+        - technology
+            - better jobs, able to explore more (e.g. religion, lab)
+    - lose the game if all people die (no health, hunger, etc.)
+    - statistics are affected by the environment
+    - people interact with objects in the environment (tasks)
+        - building (fire, shelter, others)
+            - require multiple people
+            - list of people required
+        - gathering resources (fishing, stockpile/storage, resource system)
+            - assign task, animation, come out with resources
+        - farming, gathering
+        - environmental entities
+            - crops, wild food sources (mushrooms, berries)
+        - cooking (raw food to edible food)
+        - exploring (ruins, treasure, etc.)
+        - inputs 
+            - human, environment, time
+        - outputs
+            - reduce food, get sick, add buildings, increase stockpile
+        - can decide their tasks, default tasks, can override yours (e.g. stress if low food stockpile), certain tasks you can/cannot assign
+    - resources
+        - raw food, edible food, water
+        - stone, wood
+    - random events that trigger event modifiers
+        - every day/game tick has a chance of a random event occurring
+    - jobs for villagers (fishermen, builder, farmer, healer, parent)
+        - can level up, faster at job
+        - some way to determine what they do when idle, whether through assigning as a player or randomly assigning based on skill level
+    - villagers age
+        - babies (0-1), children (2-13), adults (13+)
+    - villagers populate by task (make baby)
+        - one man, one woman
+        - can have twins
+    - infinite amount of each entity
+    - happiness (people work faster)
+        - lagoon
+        - religion
+        - burial
+    - later features
+        - exploration of island
+        - religion
+        - markets
+        - crime
+- Come up with the order in which we will implement the features--so a list of goals
+    - Describe a minimum viable product to work toward
+- Make a design plan
+- start coding
